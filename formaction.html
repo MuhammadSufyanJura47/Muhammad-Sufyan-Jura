@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome Page</title>
+    <link rel="shortcut icon" href="Untitled-3.ico" type="image/x-icon">
+
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 50px;
+      background-color: #f0f8ff;
+      user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    }
+    img {
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+    }
+    .animated-image,
+.animated-heading {
+  animation-play-state: running;
+}
+
+.container:hover .animated-image,
+.container:hover .animated-heading {
+  animation-play-state: paused;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.animated-image {
+  width: 300px;
+  animation: growShrink 3s infinite ease-in-out;
+}
+
+.animated-heading {
+  animation: moveHeading 3s infinite ease-in-out;
+  margin-top: 10px; /* Optional spacing */
+}
+
+@keyframes growShrink {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes moveHeading {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(23px); }
+  100% { transform: translateY(0); }
+}
+h1 {
+      margin-top: 20px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="Picture3.png" class="animated-image" alt="Person Welcoming">
+  <h1 class="animated-heading">Thanks for visiting our website!</h1>
+  </div>
+
+  <!-- Audio -->
+  <audio id="welcomeAudio" muted autoplay loop>
+    <source src="yt1s.com - DuniyaPur  Full OST  Sar Phiray Banday  Asrar  Shuja Haider  Ft Khushhal Khan Ramsha Khan_1080p.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    window.onload = function() {
+      var audio = document.getElementById('welcomeAudio');
+      audio.play();
+      // Unmute audio after a short delay to ensure it plays
+      setTimeout(function() {
+        audio.muted = false;
+        audio.volume = 0.1;
+      }, 100);
+    };
+  </script>
+
+</body>
+</html>

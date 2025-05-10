@@ -1,0 +1,565 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+  }
+  body::-webkit-scrollbar{
+    display: none;
+  }
+  .sidebar {
+    height: 100vh;
+    width: 250px;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    position: fixed;
+  }
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    
+  }
+  .name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .name:hover{
+    background-image: linear-gradient(to right, #34f93e, #eee42a, #28bad7);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  .social-icons i {
+    color: white;
+    margin: 0 5px;
+    font-size: 1.2rem;
+  }
+  .nav-link {
+    color: white;
+    font-size: 1rem;
+  }
+  .nav-link:hover {
+  user-select: none;
+  }
+  .dropdown-menu {
+    background-color: #343a40;
+  }
+  .dropdown-item {
+    color: white;
+  }
+  .dropdown-item:hover {
+    background-color: #495057;
+  }
+  .bi-facebook:hover{
+    color: #1877F2;
+  }
+  .bi-instagram:hover{
+    background-image: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  .bi-linkedin:hover{
+    color: #0077B5;
+  }
+  .bi-skype:hover{
+    color: #00AFF0;
+  }
+  .bi-twitter-x:hover{
+    color: gray;
+  }
+#a{
+  color: white;
+}
+#b{
+  color: white;
+}
+#c{
+  color: white;
+}
+#d{
+  color: white;
+}
+#e{
+  color: white;
+}
+#f{
+  color: white;
+}
+#g{
+  color: white;
+}
+#h{
+  color: white;
+}
+#a:hover{
+  color: #f9ce34;
+}
+#b:hover{
+  color: #6228d7;
+}
+#c:hover{
+  color: cadetblue;
+}
+#d:hover{
+  color: chartreuse;
+}
+#e:hover{
+  color: crimson;
+}
+#f:hover{
+  color: darkorchid;
+}
+#g:hover{
+  color: fuchsia;
+}
+#h:hover{
+  color: chocolate;
+}
+.front{
+  background-image: url('front.png');
+  background-size: cover;
+  height: 80vh;
+  width: 1050px;
+  margin-left: 250px;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+#h1{
+  color: white;
+}
+#h3{
+  color: white;
+}
+.typing-container {
+  display: inline-block;
+  position: relative;
+  min-height: 60px;
+  line-height: 1.2; /* Tighter text spacing */
+
+}
+
+#animated-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+    padding-bottom: 3px; /* Space for underline */
+
+}
+
+.dynamic-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0; /* Start invisible */
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  transition: width 0.1s linear; /* Matches typing speed */
+  border-radius: 3px;
+}
+.about{
+  height: 80vh;
+  width: 1050px;
+  margin-left: 250px;
+  padding-left: 20px;
+}
+#hh3{
+  margin-top: 30px;
+  
+}
+.custom-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  border-radius: 20%;
+}
+.rounded-start{
+  border-radius: 2%;
+}
+.list-about{
+  list-style-type: none;
+}
+#linkdin-link{
+  text-decoration: none;
+  color: black;
+}
+#linkdin-link:hover{
+  color: #00f2fe;
+}
+.bi-caret-right{
+  color: #00AFF0;
+}
+#email{
+  text-decoration: none;
+  color: black;
+}
+#email:hover{
+  color: #00f2fe;
+}
+#emailh{
+  text-decoration: none;
+  color: black;
+}
+#emailh:hover{
+  color: black;
+}
+.client-section{
+  margin-top: 150px;
+  margin-left: -330px;
+  display: flex;
+  justify-content: space-around;
+}
+.bi-emoji-smile{
+  color: #00AFF0;
+}
+.bi-emoji-smile:hover{
+background-image: linear-gradient(to right, yellow, orange);
+  -webkit-background-clip: text; /* For Safari and Chrome */
+  -webkit-text-fill-color: transparent; /* Make the text itself transparent */
+  background-clip: text; /* For other browsers */
+  color: transparent; /* Make the text itself transparent */
+  }
+  .bi-file-earmark-richtext{
+  color: #00AFF0;
+}
+  .bi-file-earmark-richtext:hover{
+     background-image: linear-gradient(to bottom, lightblue, darkblue);
+     -webkit-background-clip: text; /* For Safari and Chrome */
+  -webkit-text-fill-color: transparent; /* Make the text itself transparent */
+  background-clip: text; /* For other browsers */
+  color: transparent; /* Make the text itself transparent */
+  }
+  .bi-headset{
+  color: #00AFF0;
+}
+  .bi-headset:hover{
+    background-image: linear-gradient(to right, red, yellow);
+    -webkit-background-clip: text; /* For Safari and Chrome */
+  -webkit-text-fill-color: transparent; /* Make the text itself transparent */
+  background-clip: text; /* For other browsers */
+  color: transparent; /* Make the text itself transparent */
+  }
+  .bi-people-fill{
+  color: #00AFF0;
+}
+  .bi-people-fill:hover{
+     background-image: linear-gradient(to right, blue, red);
+     -webkit-background-clip: text; /* For Safari and Chrome */
+  -webkit-text-fill-color: transparent; /* Make the text itself transparent */
+  background-clip: text; /* For other browsers */
+  color: transparent; /* Make the text itself transparent */
+  }
+  .cltinfo{
+     margin-left: -330px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .sml{
+    width: 80px;
+    text-align: left;
+    margin-left: 60px;
+  }
+  .proj{
+    width: 80px;
+    text-align: left;
+    margin-left: 60px;
+  }
+  .hdst{
+    width: 80px;
+    text-align: left;
+    margin-left: 60px;
+  }
+  .ppl{
+    width: 80px;
+    text-align: left;
+    margin-left: 60px;
+  }
+  #cnt{
+    color: #000000;
+  }
+  #discrp{
+    color: grey;
+  }
+  .skills{
+    margin-top: 100px;
+    margin-left: -353px;
+    margin-right: -77px;
+    background-color: rgba(1, 230, 255, 0.098);
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+.progress{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  animation: fill 2s ease-in-out forwards;
+}
+@keyframes fill {
+  from { width: 0; }
+  to { width: 85%; }
+}
+ #spinner-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: opacity 2s ease;
+    }
+
+    #spinner-overlay.hide {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .timeline {
+      position: relative;
+      padding: 2rem 0;
+      background-image: url('abc.png');
+      background-repeat:  no-repeat;
+      background-size: 200px;
+      
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #0d6efd;
+      transform: translateX(-50%);
+    }
+
+    .timeline-item {
+      position: relative;
+      width: 50%;
+      padding: 1rem 2rem;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      width: 16px;
+      height: 16px;
+      background: #0d6efd;
+      border-radius: 50%;
+      border: 3px solid white;
+      z-index: 1;
+    }
+
+    .timeline-left {
+      left: 0;
+      text-align: right;
+    }
+
+    .timeline-left::before {
+      right: -8px;
+    }
+
+    .timeline-right {
+      left: 50%;
+    }
+
+    .timeline-right::before {
+      left: -8px;
+    }
+.timeline{
+  margin-left: -330px;
+}
+#h4t{
+  margin-left: -330px;
+}
+  .potfolio{
+    margin-top: 100px;
+    margin-left: -353px;
+    margin-right: -77px;
+    background-color: rgba(1, 230, 255, 0.098);
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #nv1{
+    background-color: #495057;
+    -webkit-background-clip: text; /* For Safari and Chrome */
+  -webkit-text-fill-color: transparent; /* Make the text itself transparent */
+  background-clip: text; /* For other browsers */
+  color: transparent; /* Make the text itself transparent */
+  }
+  #nv1:hover{
+
+    background-color: #34f93e;
+    -webkit-background-clip: text; /* For Safari and Chrome */
+  -webkit-text-fill-color: transparent; /* Make the text itself transparent */
+  background-clip: text; /* For other browsers */
+  color: transparent; /* Make the text itself transparent */
+  }
+  .card-hover:hover {
+    transform: scale(1.07);
+    transition: transform 0.3s ease;
+        background-image: linear-gradient(to right, rgba(0, 255, 149, 0.304), rgba(255, 77, 0, 0.372));;
+
+  }
+  .card-hover {
+    transition: transform 0.3s ease;
+    background-image: linear-gradient(to right, rgba(0, 255, 255, 0.372), rgba(238, 0, 255, 0.304));;
+  }
+#ucb{
+  height: 150px;
+  width: 150px;
+  margin: 5px;
+}
+#itlof{
+  height: 150px;
+  width: 100px;
+  margin: 5px;
+}
+.services{
+    margin-top: 100px;
+    margin-left: -353px;
+    margin-right: -77px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+.services1{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+  #serv{
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: transform 0.3s ease;
+    background-image: linear-gradient(to right, rgba(0, 255, 255, 0.105), rgba(0, 255, 30, 0.128));
+  }
+  #serv:hover{
+    transform: scale(1.07);
+    transition: transform 0.3s ease;
+    background-image: linear-gradient(to right, rgba(0, 255, 251, 0.103), rgba(13, 255, 0, 0.121));
+  }
+  .testmonials{
+    margin-top: 100px;
+    margin-left: -353px;
+    margin-right: -77px;
+    background-color: rgba(1, 230, 255, 0.098);
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+.carousel{
+  
+  margin-left: 300px;
+  width: 400px;
+  height: 400px;
+}
+.carousel-inner{
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+.carousel-inner:hover{
+  transform: scale(1.04);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 12px rgb(255, 255, 255), 0 0 12px rgb(0, 208, 255), 0 0 12px rgb(0, 102, 255);
+}
+.contact{
+  margin-left: -330px;
+}
+.coo{
+  display: flex;
+  justify-content: space-around;
+}
+.map{
+  margin-left: -110px;
+  margin-right: 200px;
+  height: 500px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 12px rgb(255, 255, 255), 0 0 12px rgb(7, 11, 12), 0 0 12px rgb(2, 4, 6);
+}
+.add{
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: rgb(0, 255, 26); /* or any visible color */
+  background-color: rgb(0, 106, 255);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Make the text itself transparent */
+  background-clip: text; /* For other browsers */
+  color: transparent; /* Make the text itself transparent */
+}
+.con{
+  margin-left: -300px;
+
+}
+.contact-form{
+  height: 500px; 
+  width: 300px; 
+  margin: auto; 
+  padding: 20px;
+  border-radius: 5px; 
+  box-shadow: 0 0 12px rgb(255, 255, 255), 0 0 12px rgb(7, 11, 12), 0 0 12px rgb(2, 4, 6); 
+}
+
+.scroll-to-top {
+      position: fixed;
+      size: 50px;
+      bottom: 30px;
+      right: 30px;
+      background-color: #00ff4c;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 15px;
+      width: 80px; 
+      height: 80px;
+      font-size: 32px;
+      cursor: pointer;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+      display: none;
+    }
+
+    .scroll-to-top:hover {
+      background-color: #00a6ff4b;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
